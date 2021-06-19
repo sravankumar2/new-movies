@@ -57,10 +57,11 @@ class Cards extends Component {
     else if(Filter.length=0)
         return (
         <>            
-        <div className="cards">
+        <div className="cards">       
+         
             {data.map(item =>{
                 return <div className="card" key={item.imdbId}>
-                  <div>
+                  <div className="imgWrapper">
                    <img src={item.Poster} alt={item.Title}/>
                   </div>
                   <div className="details">
@@ -68,7 +69,7 @@ class Cards extends Component {
                     <p>{item.Year}</p>
                   </div>
                 </div>               
-            }) }       
+            }) }           
         </div>
         </>     
            )  

@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background :#131b20;
+}
+.inputSearch{
+    font-size: 1.5rem;
+    margin:1em 2em;      
+}
+.topbar{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5em 2em;
+}

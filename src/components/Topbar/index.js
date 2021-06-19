@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import "./index.css"
 import Cards from '../cards';
 class Topbar extends Component {
     constructor(props) {
@@ -19,7 +20,9 @@ class Topbar extends Component {
     render(){
        
     return ( <>
-        <input type="text" placeholder="Search" onChange={this.searchFunction} />
+        <div className="inputSearch">
+        <input type="text" className="topbar" placeholder="Search" onChange={this.searchFunction} />
+        </div>
         <Cards searItem={this.state.searchValue}/>
     </> )
     }
